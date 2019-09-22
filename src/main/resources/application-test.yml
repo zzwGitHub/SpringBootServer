@@ -1,0 +1,6 @@
+# 测试配置
+server:
+  port: 8088
+  servlet:
+    context-path: /BootService
+
