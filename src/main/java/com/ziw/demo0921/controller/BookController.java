@@ -2,6 +2,7 @@ package com.ziw.demo0921.controller;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping("/book")
 public class BookController {
 
-    @RequestMapping("/list")
+    @GetMapping("/list")
     public String list(HttpServletRequest request, HttpServletResponse response){
 
         JSONArray array = new JSONArray();
@@ -27,5 +28,15 @@ public class BookController {
         }
 
         return array.toJSONString();
+    }
+
+
+    @GetMapping("/add")
+    public String add(String name, String author, String price, HttpServletRequest request, HttpServletResponse response){
+
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("id", "88ufs");
+
+        return jsonObject.toJSONString();
     }
 }
