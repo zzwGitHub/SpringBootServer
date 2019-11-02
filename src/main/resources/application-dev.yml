@@ -10,7 +10,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://94.191.35.159:3603/ziw?useUnicode=true&characterEncoding=utf-8
     username: root
-    password: ZiwCxc.0922
+    password: root
     type: com.alibaba.druid.pool.DruidDataSource
 # mybatis-plus相关配置
 mybatis-plus:
